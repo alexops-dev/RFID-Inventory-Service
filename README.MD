@@ -1,4 +1,4 @@
-<h3>Oleksandra Baga
+<h3>Aleandra (Oleksandra) Baga
 
 Bachelor Thesis and Programming Project
 
