@@ -1,13 +1,77 @@
-<h3>Alexandra (Oleksandra) Baga
-
-Bachelor Thesis and Programming Project
-
-<h2>Obtaining Bachelor of Engineering (B.Eng)</h2>
-
-Bachelor of Computer Engineering</h3>
+<h3>Alexandra Baga B.Eng, M.CS
+Bachelor Thesis and Programming Project</h3>
 
 ================================================================================
+# RFID Asset Manager
 
+RFID- Inventory- Service is a web-based system for contactless borrowing and returning of physical devices using RFID and MIFARE technology.
+
+The application was developed as part of a Bachelor Thesis and Programming Project for Berliner Hochsdhule für Technik on 2020 to manage Raspberry Pi boards in a lab environment, enabling students to check devices in and out using their student cards.
+
+## 🚀 Purpose
+
+The system automates the process of lending and returning hardware assets by:
+
+- Identifying students via MIFARE-enabled student cards
+- Detecting devices via RFID tags
+- Automatically determining borrow/return actions
+- Recording all transactions in a database
+
+The goal is to reduce manual administration and provide a fast, contactless user experience.
+
+## 🧩 How it works
+
+1. A student scans their **MIFARE student card**
+2. The system identifies the student
+3. A Raspberry Pi device with an **RFID tag** is scanned
+4. The system determines whether the device is being:
+   - borrowed, or
+   - returned
+5. The user confirms the action via a tablet interface
+6. A new record is created in the database
+
+## ⚙️ Features
+
+- Contactless identification (RFID + MIFARE)
+- Automatic borrow/return detection
+- Real-time user feedback (UI)
+- Transaction history stored in MySQL
+- Simple and intuitive interface (tablet-friendly)
+
+## 🛠️ Tech Stack
+
+| Layer        | Technology                 |
+|--------------|----------------------------|
+| Backend      | Django (Python)            |
+| API          | REST API                   |
+| Frontend     | JavaScript                 |
+| Database     | MySQL                      |
+| Hardware     | RFID Scanner, MIFARE Cards |
+| Devices      | Raspberry Pi               |
+
+## 🏗️ Architecture
+
+- Django backend handles business logic and API
+- RFID reader sends scanned data to the application
+- MySQL stores users, devices, and transactions
+- Frontend provides a simple UI for interaction and confirmation
+
+## 📌 Use Case
+
+Designed for university labs to manage shared hardware resources such as Raspberry Pi boards.
+
+## 📊 Status
+
+Completed (Bachelor Thesis Project)  
+Potential for extension into a full IoT asset management platform.
+
+---------
+
+Real Application (Server + Display) is presented on tablet and gets interactively requests from RFID reader connected to MacBook. The page shows the successful operation.
+
+![Real App](/docs/fsm_success_end.jpg)
+
+================================================================================
 
 <h1>Development of a database application for "Aca-Loan-Raspi"-project of PSE-Labaratory</h1>
 
@@ -37,18 +101,12 @@ End: Winter 2020**
 
 ** I did my bachelor thesis (development + paper) during CoVid19 Lockdowns (closed kindergarten) with a two years old child at home. It took thus longer than it supposed to be.
 
-I succedded the bachelor defence on 12 February 2022. I have obtained Bachelor Degree in Computer Engineering in Berliner Hochschule für Technik (ehemalige Beuth Hochschule für Technik Berlin) with an avarage score 1.71
+I succedded the bachelor defence on 12 February 2022. I have obtained Bachelor Degree in Computer Engineering in Berliner Hochschule für Technik (ehemalige Beuth Hochschule für Technik Berlin) with an avarage score 1.70 (I belong to 10% of the best students in the BHT)
 
 ---------
-
-Real Application (Server + Display) is presented on tablet and gets interactively requests from RFID reader connected to MacBook. The page shows the successful operation.
-
-![Real App](/docs/fsm_success_end.jpg)
-
 Component Diagram
 
 ![acaLoan Presentation Screenshot](/docs/screenshots/01.png)
-
 
 
 ================================================================================
