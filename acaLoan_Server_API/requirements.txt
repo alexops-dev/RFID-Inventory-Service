@@ -38,7 +38,7 @@ pyparsing==2.4.2
 pyrsistent==0.15.4
 python-dateutil==2.8.0
 pytz==2019.2
-requests==2.22.0
+requests==2.33.0
 Send2Trash==1.5.0
 six==1.12.0
 sklearn==0.0
